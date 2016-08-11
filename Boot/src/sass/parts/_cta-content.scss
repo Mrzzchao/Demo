@@ -1,0 +1,32 @@
+.cta-content {
+    position: relative;
+    padding: 90px 0;
+    background: #333;
+
+    .fa-flask {
+        color: $c3;
+    }
+
+    h3 {
+        font-size: 35px;
+        color: #fff;
+        margin: 10px 0 20px;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        font-weight: 700;
+    }
+
+    p {
+        margin: 0 0 30px;
+        color: #fff;
+        opacity: .6;
+    }
+
+    .btn {
+        margin: 0 auto;
+        &:hover {
+            background: $c1;
+        }
+    }
+
+}

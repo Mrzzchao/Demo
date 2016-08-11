@@ -1,0 +1,70 @@
+$c1: #00bcd4;
+$c2: rgb(0, 0, 0);
+$c3: #888;
+$c4: #333;
+$c5: #222;
+$c6: #999;
+
+.icon-bar {
+    background: #fff !important;
+}
+li, ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a, button {
+    color: #fff;
+}
+a, a:focus, a:hover, button, button:hover {
+    outline: 0;
+    text-decoration: none;
+    transition: .4s;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $c4;
+    font-family: Catamaran,sans-serif;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+    color: $c3;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: Open Sans,sans-serif;
+    letter-spacing: .3px;
+}
+
+.btn {
+    padding: 0 40px;
+    line-height: 50px;
+    color: #fff;
+    background: $c1;
+    font-size: 13px;
+    font-weight: 700;
+    border: medium none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 0;
+    font-family: Catamaran,sans-serif;
+    &:hover {
+        color: #fff;
+        background: $c2;
+    }
+}
+
+/* 垂直居中 */
+.content-center {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}

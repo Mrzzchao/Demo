@@ -1,0 +1,49 @@
+.navbar {
+    height: 109px;
+    padding: 12px 0px;
+    background: transparent;
+    border: none;
+    font-family: Catamaran, sans-serif;
+    transition: .4s;
+
+    &-brand {
+        color: #fff!important;
+        font-size: 30px;
+        margin-top: 19px;
+        font-weight: 700;
+        transition: all .4s ease 0s;
+        letter-spacing: -1px;
+        padding: 22px 0 0;
+        line-height: 0;
+    }
+    li {
+        a {
+            position: relative;
+            display: block;
+            padding: 34px 10px 32px;
+            color: #fff!important;
+            font-size: 12px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            &:hover {
+                color: #00bcd4!important;
+            }
+        }
+    }
+    .navbar-right:last-child {
+        margin-right: 25px;
+    }
+}
+
+.nav-scoll {
+    padding: 3px 0px 5px;
+    height: 89px;
+    background: $c2;
+}
+
+.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    border: none;
+    background: transparent;
+}
