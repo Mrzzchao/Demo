@@ -1,0 +1,21 @@
+.modal-dialog {
+    background: rgb(39, 190, 217);
+    font-size: 20px;
+    color: white;
+}
+.modal-content {
+  height: 154px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 154px;
+  color: rgb(39, 190, 217);
+
+  a {
+      font-size: 10px;
+      color: rgb(175, 175, 175);
+      &:focus {
+          color: #96989a;
+      }
+      cursor: pointer;
+  }
+}
