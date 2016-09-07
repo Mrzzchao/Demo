@@ -1,0 +1,568 @@
+.order-div{
+	.alert-danger {
+		margin-top: 10px;	
+	}
+
+	.imgsize{
+    max-width: 212px;
+    max-height: 75px;
+   }
+
+   .top{
+		width: 100%;
+		margin:2px auto;
+		overflow: hidden;
+
+	}
+
+	.header_left{
+		padding: 2px;
+		float:left;
+	}
+
+	.header_right{
+		text-align: center;
+		font-size: 18px;
+		float:left;
+		position: relative;
+		left: 35%;
+	}
+
+	.header_right li{
+
+		float: left;
+	}
+
+	.header_right i{
+ 		font-size: 20px;
+		padding: 2px;
+		display: inline-block;
+	}
+
+
+	 .current{
+	    /*background-color: #23c4e7;*/
+	    color: #23c4e7;
+	}
+
+	.main{
+
+		width:100%;
+		margin:2px auto;
+		/*background-color: red;*/
+
+	}
+
+	.main h1{
+		font: lighter 24px/30px arial,"microsoft yahei";
+    	color: #555;
+	}
+
+	.main p{
+		font: 12px/20px arial,"microsoft yahei";
+    	color: #AAA;
+	}
+
+
+	.receive{
+		border:1px solid #ccc; border-left:none;border-right:none;
+
+	}
+
+	.receive-box{
+		padding: 10px;
+		margin:2px;
+	}
+
+	.receive-box dl dt{
+		font: lighter 14px/20px arial,"microsoft yahei";
+		padding: 10px;
+	}
+
+	.receive-box dl dt input{
+		font: lighter 14px/20px arial,"microsoft yahei";
+		margin: 5px;
+	}
+
+	.input1{
+		width: 130px;
+	}
+
+	.address{
+		width:470px;
+	}
+	.receive:hover{
+		background-color: #f2f1e5;
+
+	}
+
+	.payment{
+		border:1px solid #ccc; border-left:none;border-right:none;
+	}
+	.payment:hover{
+		background-color: #f2f1e5;
+
+	}
+
+	.receipt{
+		border:1px solid #ccc; border-left:none;border-right:none;
+	}
+	.receipt:hover{
+		background-color: #f2f1e5;
+
+	}
+
+	.coupon{
+		border:1px solid #ccc; border-left:none;border-right:none;
+	}
+
+	.coupon:hover{
+
+		background-color: #f2f1e5;
+	}
+
+
+	.cart{
+		border:1px solid #ccc; border-left:none;border-right:none;
+
+	}
+	.cart h3{
+		font: lighter 18px/30px arial,"microsoft yahei";
+    	color: #555;
+	}
+
+	.cart h3 a{
+		color: blue;
+	}
+	.cart h3 a:hover{
+		color: red;
+	}
+
+	.main h3{
+		margin: 5px;
+		font: lighter 18px/30px arial,"microsoft yahei";
+    	color: #555;
+
+	}
+
+	.main h3 a{
+		color: blue;
+		font: lighter 15px/30px arial,"microsoft yahei";
+	}
+
+	.main h4{
+		font: lighter 15px/30px arial,"microsoft yahei";
+    	color: #555;
+
+	}
+
+	.table_title th{
+
+		margin-left: 5px;
+		font-size: 15px;
+		padding: 1px 1px;
+
+	}
+
+	.imgsizes{
+    width: 120px;
+    height: 120px;
+   }
+
+	.header_left{
+		padding: 2px;
+		float:left;
+
+	}
+
+	.top{
+		width: 100%;
+		margin:2px auto;
+		overflow: hidden;
+
+	}
+
+	.header_right{
+		text-align: center;
+		font-size: 18px;
+		float:left;
+		position: relative;
+		left: 35%;
+	}
+
+	.header_right li{
+
+		float: left;
+	}
+
+	.header_right i{
+ 		font-size: 20px;
+		padding: 2px;
+		display: inline-block;
+	}
+
+    .current{
+	    /*background-color: #23c4e7;*/
+	    color: #23c4e7;
+	}
+
+ 	.header_left{
+		padding: 2px;
+		float:left;
+	}
+
+	.main{
+
+		width:100%;
+		margin:2px auto;
+		/*background-color: red;*/
+
+	}
+
+	.main h1{
+		font: lighter 24px/30px arial,"microsoft yahei";
+    	color: #555;
+	}
+
+	.main p{
+		font: 12px/20px arial,"microsoft yahei";
+    	color: #AAA;
+	}
+
+	.bottom{
+		width:100%;
+		margin:2px auto;
+		/*background-color: blue;*/
+	}
+
+	.good_table{
+		/*border: #A8A8A8 solid;
+    	border-width: 0 1px;*/
+    	/*background-color: #F0F0F0;*/
+
+    	width: 100%;
+    	border-collapse: collapse;
+	    border-style: solid;
+	    border-width: 2px 1px;
+	    border-color: #AAA #DDD;
+	    margin-bottom: 15px;
+
+	}
+
+	.good_table thead{
+		font-size: 12px;
+		background-color: #F0F0F0;
+		padding: 10px;
+		margin-top: 5px;
+
+	}
+
+	.table_title th{
+
+		margin-left: 5px;
+		font-size: 15px;
+		padding: 1px 1px;
+
+	}
+
+	.store-sale{
+		float:right;
+		height: 30px;
+	}
+
+	.store-sale em{
+		float: left;
+  		font-size: 12px;
+	    line-height: 14px;
+	    color: #FFF;
+	    background-color: #090;
+	    vertical-align: middle;
+	    display: inline-block;
+	    height: 20px;
+	    padding: 2px 6px;
+	    border-radius: 10px;
+   		margin-right: 4px;
+   		margin-top: 5px;
+
+  }
+
+  	.store-sale p{
+  		float: left;
+  		margin-right: 4px;
+		padding: 2px 1px;
+		margin-top: 5px;
+  	}
+
+	.good_table tbody{
+		background-color:F0F0F0 ;
+	}
+
+	.good_table tbody .table_middle{
+		background-color:#AAA #DDD;;
+		margin-left: 5px;
+		font-size: 15px;
+		padding: 3px 3px;
+		background-color: #f2f1e5;
+	}
+
+	.table_middle td {
+	    padding: 8px 2px;
+    	text-align: center;
+    	vertical-align: middle;
+   		border-bottom: solid 1px #DDD
+
+	}
+
+	.table_middle td img{
+		max-width: 40px;
+    	max-height: 40px;
+
+	}
+
+	.table-btn{
+		font: 14px/14px Arial;
+	    color: #777;
+	    text-decoration: none;
+	    background-color: #F5F5F5;
+	    letter-spacing: normal;
+	    word-spacing: normal;
+	    text-align: center;
+	    vertical-align: middle;
+	    padding:3px;
+	    height: 14px;
+	    margin: 0 4px;
+	    border: solid 1px;
+	    border-color: #DCDCDC #DCDCDC #B3B3B3 #DCDCDC;
+	    cursor: pointer;
+	}
+
+	.table-btn:hover{
+		font: 14px/14px Arial;
+	    color: #777;
+	    text-decoration: none;
+	    background-color: #127314;
+	    letter-spacing: normal;
+	    word-spacing: normal;
+	    text-align: center;
+	    vertical-align: middle;
+	    padding:3px;
+	    height: 14px;
+	    margin: 0 4px;
+	    border: solid 1px;
+	    border-color: #DCDCDC #DCDCDC #B3B3B3 #DCDCDC;
+	    cursor: pointer;
+	}
+
+	.inputer{
+		font: 12px/20px Tahoma;
+	    color: #777;
+	    background-color: #FFF;
+	    vertical-align: middle;
+	    display: inline-block;
+	    height: 20px;
+	    padding: 2px 4px;
+	    border: solid 1px #CCC;
+	    outline: 0 none;
+	    width: 25px;
+	}
+
+	.opration{
+
+	/*	font-size: 15px;
+		color:red;*/
+	}
+
+	.sum{
+		font: normal 15px/50px "microsoft yahei", Arial;
+		float: right;
+		padding: 5px;
+	}
+
+	.total_sum{
+		font: normal 20px/50px "microsoft yahei", Arial;
+    	margin-right: 20px;
+		float: right;
+
+	}
+	.total_sum_font{
+		color:red;
+		font-size: 28px;
+	}
+
+
+	.table_foot{
+		background: #f6fff5;;
+		padding: 10px;
+
+	}
+	.table_middle td a{
+		width: 90%;
+		line-height: 12px;
+		overflow: hidden;
+
+	}
+
+	.cart-submit{
+		height: 50px;
+		width:100%;
+		position: relative;
+		left:0;
+
+	}
+	.cart-submit-right{
+		height: 50px;
+		width:100%;
+
+
+	}
+
+	.btn-cart-submit{
+		float: right;
+		margin: 0 auto;
+    	border: 1px solid;
+    	color: white;
+    	padding: 10px 10px;
+    	margin: 15px;
+	    font-size: 17px;
+	    font-weight: normal;
+	    font-family: "Microsoft Yahei","微软雅黑",SimHei,"黑体","Hiragino Sans GB",STHeiTi,sans-serif;
+	    cursor: pointer;
+	    background-color: #2F96B4;
+    	border-color: #2A87A2 #2A87A2 #237087 #2A87A2;
+	}
+
+	.btn-cart-submit:hover{
+
+		margin: 0 auto;
+    	border: 1px solid;
+    	color: white;
+    	padding: 10px 10px;
+    	margin: 15px;
+	    font-size: 17px;
+	    font-weight: normal;
+	    font-family: "Microsoft Yahei","微软雅黑",SimHei,"黑体","Hiragino Sans GB",STHeiTi,sans-serif;
+	    cursor: pointer;
+	    background-color: #17BCCF;
+    	border-color: #2A87A2 #2A87A2 #237087 #2A87A2;
+	}
+
+
+	.good_table tbody .table_head{
+		background-color:#DAF0FE ;
+	}
+
+	.table_head a{
+		margin-left: 5px;
+		margin-top: 5px;
+	}
+
+	.bottom .title h4{
+	font: 12px/20px arial, "microsoft yahei";
+    height: 10px;
+    padding: 10px 10px;
+
+}
+
+	.container .bottom .title{
+	/*background-color: #FFF;
+	height: 20px;
+	padding: 5px 10px;
+	border-bottom: solid 2px #D93600;*/
+	}
+
+	.bottom_good li{
+
+		/*display: inline-block;*/
+		text-align: center;
+	}
+
+	.bottom_box{
+		width:220px;
+		height: 220px;
+		float: left;
+
+
+	}
+
+	.bottom_box p{
+		text-align: center;
+
+	}
+
+	.bottom_font1{
+		font-family: "Microsoft Yahei","微软雅黑",SimHei,"黑体","Hiragino Sans GB",STHeiTi,sans-serif;
+    	font-size: 12px;
+    	color: blue;
+    	line-height: 18px;
+		white-space: pre-wrap;
+		height: 36px;
+		width: 90%;
+		overflow: hidden;
+		margin: 8px auto;
+	}
+
+	.bottom_font2{
+		font-weight: 600;
+    	color: #D93600;
+    	height: 12px;
+	}
+
+
+	.btn-add {
+
+    border: 1px solid #E6E6E6;
+    padding: 10px 10px;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: "Microsoft Yahei","微软雅黑",SimHei,"黑体","Hiragino Sans GB",STHeiTi,sans-serif;
+    color: #fff;
+
+    background: #D93600;
+    cursor: pointer;
+
+  }
+  .btn-add:hover {
+
+    border: 1px solid #E6E6E6;
+    padding: 10px 10px;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: "Microsoft Yahei","微软雅黑",SimHei,"黑体","Hiragino Sans GB",STHeiTi,sans-serif;
+    color: #fff;
+
+    background: #BB0000;;
+    cursor: pointer;
+
+  }
+
+  .tatol_shop_sum{
+  	color: #37839A;
+    font-weight: 600;
+  }
+
+  .required{
+  	color:red;
+  }
+
+  .tip{
+	position: relative;
+	left: 9%;
+
+  }
+
+  .coupon a{
+
+  	font: 15px/20px arial,"microsoft yahei";
+  	color:blue;
+  	display: inline-block;
+  }
+
+  .coupon h4{
+  	margin: 0px !important;
+	font: 15px/20px arial,"microsoft yahei";
+  	display: inline-block;
+  }
+
+}

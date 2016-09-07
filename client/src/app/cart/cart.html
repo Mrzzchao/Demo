@@ -1,0 +1,258 @@
+<header-top></header-top>
+<div class="cart-div">
+  <!--  <div class="adv"></div> -->
+
+  <div class="container">
+    <br>
+    <div class="top">
+      <!-- <p>top</p> -->
+      <div class="header_left">
+        <a href="#">
+          <img src="assets/images/home/mmloo.png" class="imgsize">
+        </a>
+      </div>
+
+      <div class="header_right">
+        <ul>
+          <li class="current">
+            <i class="glyphicon glyphicon-shopping-cart"></i>
+            <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" width="80%" color=#987cb9 SIZE=1>
+            <p>&nbsp我的购物车&nbsp</p>
+
+          </li>
+
+          <li class="">
+            <i class="glyphicon glyphicon-pencil"></i>
+            <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" width="80%" color=#987cb9 SIZE=1>
+            <p>&nbsp填写核对购物信息&nbsp</p>
+
+          </li>
+
+          <li class="">
+            <i class="glyphicon glyphicon-credit-card"></i>
+            <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" width="80%" color=#987cb9 SIZE=1>
+            <p>&nbsp支付提交&nbsp</p>
+
+          </li>
+
+          <li class="">
+            <i class="glyphicon glyphicon-thumbs-up"></i>
+            <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" width="80%" color=#987cb9 SIZE=1>
+            <p>&nbsp订单完成&nbsp</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" width="80%" color=#987cb9 SIZE=1>
+    <div class="main">
+      <h1>我的购物车</h1>
+      <p>查看购物车商品清单，增加或减少商品数量， 并勾选想要的商品进入下一步操作。</p>
+      <br>
+
+      <div>
+        <table class="good_table" border="1">
+          <thead class="table_title">
+            <tr>
+              <th>
+                <label>
+                  <input type="checkbox" checked="" value="1" id="selectAll" ng-model='selectAll' ng-change='setBuyAll(selectAll)'>
+                  全选</label>
+              </th>
+              <th></th>
+              <th>商品</th>
+              <th class="">单价(元)</th>
+              <th class="">数量</th>
+              <th class="">小计</th>
+              <th class="">操作</th>
+            </tr>
+          </thead>
+
+          <tbody ng-repeat='order in orders'>
+                  <tr class="table_head">
+                      <th colspan="20">
+
+                          <a target="_blank" href="#" class="glyphicon glyphicon-home">官方店铺</a>
+                          <a target="_blank" href="#" class=" glyphicon glyphicon-bell"></a>
+                          <div class="store-sale">
+                              <em class="glyphicon glyphicon-gift">免运费</em>
+                              <p>满49免运费</p>
+
+                          </div>
+                      </th>
+                  </tr>
+
+                  <tr class="table_middle">
+                      <td>
+                          <input type="checkbox"  value="85896|1" ng-checked='selectAll' ng-change='setIsBuy(order, selectOne)' ng-model='selectOne'>
+                      </td>
+
+                      <td>
+                          <a href="javascript:void(0)" ng-click='CartCtrl.setGoodData(order)'>
+                              <img ng-src="assets/images/{{order.good.photo[0]}}">
+                          </a>
+                      </td>
+
+                      <td>
+                          <dl >
+                              <dt>
+                                  <a href="javascript:void(0)" ng-click='CartCtrl.setGoodData(order)'>
+                                      {{order.good.commodity.name}}
+
+                                  </a>
+                              </dt>
+                              <dd></dd>
+                          </dl>
+                      </td>
+
+                      <td>￥<em>{{order.good.commodity.originalPrice}}</em>
+                      </td>
+                      <td>
+                          <a  title="减少商品件数" class="table-btn" ng-click='countSub(order)'>-</a>
+                          <input id="" value="1" minValue='0' type="text" class="inputer" ng-model='order.count'>
+                          <a  title="增加商品件数" class="table-btn" ng-click='countAdd(order)'>+</a>
+                      </td>
+
+                      <td class="">￥<em id="">{{order.count*order.good.commodity.originalPrice}}</em>
+                      </td>
+                      <td class="operation">
+                          <a href="" onclick="">收藏</a>
+                          <br>
+                          <br>
+                          <a href='javascript:void(0)' ng-click='delete($index)'>删除</a>
+                      </td>
+                  </tr>
+
+                  <tr>
+                      <td colspan="20">
+                          <div class="sum">
+                              <dl>
+                                  店铺合计：&nbsp ￥{{order.count*order.good.commodity.originalPrice}}
+                              </dl>
+                          </div>
+                      </td>
+                  </tr>
+
+
+          </tbody>
+          <tfoot>
+
+              <tr class="table_foot">
+                  <td colspan="20">
+                      <div class="total_sum">
+                          <dl >
+                              商品总价（不含运费）：&nbsp
+                              <span class="total_sum_font">￥{{CartCtrl.priceAll}}</span>
+                          </dl>
+                      </div>
+                  </td>
+              </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <div calss="cart-submit">
+        <div class="cart-submit-right">
+          <a ng-click='orderStep1()' href='javascript:void(0)' class="btn-cart-submit">
+            <span class="glyphicon glyphicon-pencil">下一步，填写核对购物信息</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <br>
+    <br>
+
+    <div class="bottom">
+
+      <div calss="title">
+        <h4>你可能想买</h4>
+      </div>
+      <br>
+      <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#D93600,direction:145,strength:15)" width="80%" color=#D93600 SIZE=1>
+
+      <div class="bottom_good">
+        <ul>
+          <li>
+            <div class="bottom_box">
+              <img src="assets/images/cart/ring.jpg" class="imgsizes">
+              <p class="bottom_font1">
+                <a href="">产品拍摄-小件商品1次</a>
+              </p>
+              <p class="bottom_font2">¥90.00</p>
+              <div class="bottom_button">
+                <button type="submit" class="btn-add">
+                  <i class="glyphicon glyphicon-shopping-cart"></i>添加到购物车
+                </button>
+              </div>
+
+            </div>
+          </li>
+
+          <li>
+            <div class="bottom_box">
+              <img src="assets/images/cart/latent.jpg" class="imgsizes">
+              <p class="bottom_font1">
+                <a href="">联创DF-LP1103T天禧台灯显日历带闹钟青花图纹25瓦白色全国包</a>
+              </p>
+              <p class="bottom_font2">¥119.00</p>
+              <div class="bottom_button">
+                <button type="submit" class="btn-add">
+                  <i class="glyphicon glyphicon-shopping-cart"></i>添加到购物车
+                </button>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="bottom_box">
+              <img src="assets/images/cart/bottle.jpg" class="imgsizes">
+              <p class="bottom_font1">
+                <a href="">饭扫光280g爆炒金针菇三瓶套装下饭菜、开胃菜、饭扫光</a>
+              </p>
+              <p class="bottom_font2">¥32.50</span>
+              <div class="bottom_button">
+                <button type="submit" class="btn-add">
+                  <i class="glyphicon glyphicon-shopping-cart"></i>添加到购物车
+                </button>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="bottom_box">
+              <img src="assets/images/cart/pc.png" class="imgsizes">
+              <p class="bottom_font1">
+                <a href="">戴尔(DELL)Ins15MR-7548S灵越15.6英寸轻薄笔记本电脑(i5-</a>
+              </p>
+              <p class="bottom_font2">¥4999.00</p>
+              <div class="bottom_button">
+                <button type="submit" class="btn-add">
+                  <i class="glyphicon glyphicon-shopping-cart"></i>添加到购物车
+                </button>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="bottom_box">
+              <img src="assets/images/cart/dr..jpg" class="imgsizes">
+              <p class="bottom_font1">
+                <a href="">Dr.Piz 海洋去角质胶 (120ml)加强深层清洁的功效，并深入清洁毛</a>
+              </p>
+              <p class="bottom_font2">¥244.00</p>
+              <div class="bottom_button">
+                <button type="submit" class="btn-add">
+                  <i class="glyphicon glyphicon-shopping-cart"></i>添加到购物车
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>

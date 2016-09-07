@@ -1,0 +1,25 @@
+
+<div class="container">
+  <div class="all-category row">
+    <div class="title col-md-3" id="dropdownMenu2" data-toggle="dropdown">
+        <a href="http://www.mmloo.com/shop/index.php?act=category&op=index">
+          <span class="glyphicon glyphicon-th-list ico"></span>所有商品分类<span class="caret"></span>
+        </a>
+    </div>
+
+    <div class="category dropdown-menu" aria-labelledby="dropdownMenu2">
+        <ul class="menu" >
+            <li ng-click='getCateData(cate)' ng-repeat='cate in cateMsg'><img ng-src="{{cate.icoUrl}}" class="ico"><a>{{cate.name}}</a></li>
+        </ul>
+    </div>
+
+    <div class="site-menu col-md-9">
+        <li class="col-md-2"><a href="#" class="active">首页</a></li>
+        <li class="col-md-2"><a href="#">米活动</a></li>
+        <li class="col-md-2"><a href="#">乐社区</a></li>
+        <li class="col-md-2"><a href="#">商家入驻</a></li>
+        <li class="col-md-2"><a href="#">团购</a></li>
+        <li class="col-md-2"><a href="#">米金融</a></li>
+    </div>
+  </div>
+</div>

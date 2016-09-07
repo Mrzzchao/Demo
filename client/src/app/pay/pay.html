@@ -1,0 +1,111 @@
+<header-top></header-top>
+<div class="pay-div">
+  <!--  <div class="adv"></div> -->
+
+  <div class="container">
+    <br>
+    <div class="top">
+      <!-- <p>top</p> -->
+      <div class="header_left">
+        <a href="#">
+          <img src="assets/images/home/mmloo.png" class="imgsize">
+        </a>
+      </div>
+
+      <div class="header_right">
+        <ul>
+          <li class="">
+            <i class="glyphicon glyphicon-shopping-cart"></i>
+            <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" width="80%" color=#987cb9 SIZE=1>
+            <p>&nbsp我的购物车&nbsp</p>
+
+          </li>
+
+          <li class="">
+            <i class="glyphicon glyphicon-pencil"></i>
+            <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" width="80%" color=#987cb9 SIZE=1>
+            <p>&nbsp填写核对购物信息&nbsp</p>
+
+          </li>
+
+          <li class="current">
+            <i class="glyphicon glyphicon-credit-card"></i>
+            <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" width="80%" color=#987cb9 SIZE=1>
+            <p>&nbsp支付提交&nbsp</p>
+
+          </li>
+
+          <li class="">
+            <i class="glyphicon glyphicon-thumbs-up"></i>
+            <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" width="80%" color=#987cb9 SIZE=1>
+            <p>&nbsp订单完成&nbsp</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <HR style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" width="80%" color=#987cb9 SIZE=1>
+
+    <div class="main">
+      <h1>支付提交</h1>
+      <p>订单详情内容可通过查看我的订单进行核对处理。
+      </p>
+
+      <div class="pay-box">
+        <h4>
+          请您及时付款，以便订单尽快处理！ 在线支付金额：<span class="total_sum_font">￥{{PayCtrl.priceAll}}
+          </span>元
+        </h4>
+
+        <table class="order_table">
+          <thead>
+            <tr>
+              <th class="order_table_tfont">&nbsp;</th>
+              <th class="order_table_tfont">订单号</th>
+              <th class="order_table_tfont">支付方式</th>
+              <th class="">金额</th>
+              <th class="">物流</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="order_table_tfont">&nbsp;</td>
+              <td class="order_table_tfont">8000000010940601</td>
+              <td class="order_table_tfont">
+                在线支付
+              </td>
+              <td>￥{{PayCtrl.priceAll}}</td>
+              <td>快递</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+      <div class="pay-receipt-info">
+        <div class="pay-receipt-info-title">
+          <ul>
+            <li class="">
+              <h3>三方平台支付</h3>
+            </li>
+            <li class="">
+              <h3>银行卡支付</h3>
+            </li>
+            <li class="">
+              <h3>信用支付</h3>
+            </li>
+          </ul>
+          <br>
+          <img src="assets/images/payment/bank.PNG" alt="支付">
+
+        </div>
+        <br>
+        <div class="pay-btn">
+          <a href='javascript:void(0)' ng-click='PayCtrl.pay()' id="" class="pay-btn-green" style='text-decoration:none;'>
+            <i class="glyphicon glyphicon-ok-circle"></i>确认提交支付</a>
+        </div>
+      </div>
+
+    </div>
+    <footer-nav></footer-nav>
+  </div>

@@ -1,0 +1,97 @@
+$fontSize: 16px;
+.goods-div {
+  .pingjia {
+    float: none;
+  }
+  .left {
+    img {
+      width: 500px;
+      height: 300px;
+    }
+    .small-imgs {
+      margin: 10px 0;
+      .thumbnail,
+      img {
+        height: 80px;
+        width: 80px;
+        padding: 0;
+      }
+    }
+  }
+  .right {
+    line-height: 30px;
+    .panel-heading {
+      font-size: 20px;
+      font-weight: bold;
+      color: #000;
+      .row {
+          padding-left: 10px;
+      }
+    }
+    .msg {
+      letter-spacing: 0.7em;
+      font-size: $fontSize;
+    }
+    .price1 .num {
+      font-size: 10px;
+      text-decoration: line-through;
+    }
+    .price2 .num {
+      font-size: 20px;
+      color: red;
+    }
+    .count input {
+      width: 50px;
+      padding: 0 5px;
+      height: 25px;
+    }
+    .panel-footer {
+      background: none;
+      a {
+        margin-left: 20px;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+      }
+    }
+    #addCart {
+      background: rgb(196, 240, 37);
+    }
+    #buy {
+      background: rgb(187, 51, 51);
+    }
+  }
+  .panel-title {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px auto;
+  }
+  .row3 {
+    .item {
+      margin: 20px;
+      line-height: 30px;
+      font-size: 15px;
+      .pingjia {
+        float: left;
+      }
+      .msg {
+        color: rgb(98, 158, 133);
+        overflow: auto;
+      }
+    }
+    .user-title {
+      color: #00549D;
+    }
+    .panel-footer {
+      background: inherit;
+    }
+  }
+  .footer-back {
+    overflow: auto;
+    background: #fff;
+  }
+}
+.good-div .container .cates .cate-msg a {
+  display: inline-block;
+  margin: 5px 3px !important;
+}

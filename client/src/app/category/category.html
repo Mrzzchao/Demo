@@ -1,0 +1,88 @@
+<div class="categorys">
+  <header-top></header-top>
+  <div class="adv"></div>
+  <search-box></search-box>
+  <header-nav></header-nav>
+
+  <div class="category-show">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li>
+          <span class="glyphicon glyphicon-home"></span>
+          <a ui-sref='home'>首页</a>
+        </li>
+        <li>
+          <a ui-sref='category'>{{cateTitle.description}}</a>
+        </li>
+        <li class="active">{{cateTitle.name}}</li>
+      </ol>
+
+      <div class="alert alert-warning text-center" ng-show='!haveGood'>
+        {{errorMsg}}
+      </div>
+      <div class="row text-center sortBtn">
+        <button type="button" class="btn btn-info" ng-click='col="commodity.originalPrice"; desc=!desc'>
+          价格
+        </button>
+        <button type="button" class="btn btn-info" ng-click='col="commodity.startDegree"; desc=!desc'>
+          评价
+        </button>
+        <button type="button" class="btn btn-info" ng-click='col="commodity.name"; desc=true'>
+          默认
+        </button>
+      </div>
+      <div class="row" >
+        <div class="col-md-3" ng-repeat='good in goods|orderBy: col:desc'>
+          <div class="thumbnail">
+            <a ng-click='setGoodData(good)' href='javascript:void(0)' class="thumbnail">
+              <img ng-src="assets/images/{{good.photo[0]}}" alt="稍等一会">
+            </a>
+            <div class="caption">
+              <h3>{{good.commodity.name}}</h3>
+              <span class="price">￥{{good.commodity.originalPrice}}</span>
+              <div class="pingjia">
+                <span class="glyphicon glyphicon-star" ng-repeat='i in getNumber(good.commodity.startDegree) track by $index'></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="text-center">
+        <ul class="pagination pagination-lg ">
+          <li class="disabled">
+            <a href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="#">1
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">4</a>
+          </li>
+          <li>
+            <a href="#">5</a>
+          </li>
+
+          <li>
+            <a href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+
+  <footer-nav></footer-nav>
+</div>

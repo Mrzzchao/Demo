@@ -1,0 +1,40 @@
+<div class="container header">
+    <tip-box></tip-box>
+  <div class="row">
+    <div class="col-md-2 ">
+        <a ui-sref="home">
+            <img src="assets/images/home/mmloo.png" class="logo" alt="Mmloo"/>
+        </a>
+    </div>
+    <div class="col-md-6">
+      <form class="form searchBox" role="form">
+        <div class="form-group">
+          <input type="text" class="" placeholder="搜索 吃货专场 试试^.^" ng-model='query'>
+          <button type="button" ng-click='queryGood(query)' class="btn btn-default">
+              搜索
+          </button>
+
+        </div>
+      </form>
+    </div>
+    <div class="col-md-4  user-menu">
+      <div class="row">
+          <div class="col-md-4">
+              <a href="#"><img src="assets/images/home/baoyou.png" class="" alt="">
+                  <span>认证<br>包邮</span>
+              </a>
+          </div>
+          <div class="col-md-4">
+              <a href="#"><img src="assets/images/home/jiameng.png" class="" alt="">
+                  <span>招商<br>加盟</span>
+              </a>
+          </div>
+          <div class="col-md-4">
+              <a href="#"><img src="assets/images/home/xuqiu.png" class="" alt="xuqiu.png">
+                  <span>需求<br>发布</span>
+              </a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
