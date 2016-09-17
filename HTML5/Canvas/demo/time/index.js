@@ -4,8 +4,8 @@ var RADIUS = 8;
 var FILL_COLOR = 'rgb(115, 100, 236)';
 var MARGIN_TOP = 60;
 var MARGIN_LEFT = 30;
-var DIS_NUM = (RADIUS + 1) * 14; // 数字距离
-var DIS_COLON = (RADIUS + 1) * 9; // 冒号距离
+var DIS_NUM = (RADIUS + 1) * 17; // 数字距离
+var DIS_COLON = (RADIUS + 1) * 10; // 冒号距离
 var FRICTION = 0.75; // 空气阻力
 var currTime = [0, 0, 0]; // 当前时间
 var balls = []; // 生成的小球
@@ -25,6 +25,8 @@ window.onload = function() {
     RADIUS = Math.round(CANVAS_WIDTH * 28/ 35 / 100) - 1;
     MARGIN_TOP = Math.round((CANVAS_HEIGHT - (RADIUS * 2 * 15))/2);
 
+    DIS_NUM = (RADIUS + 1) * 16; // 数字距离
+    DIS_COLON = (RADIUS + 1) * 10; // 冒号距离
     canvas.width = CANVAS_WIDTH;
     canvas.height = CANVAS_HEIGHT;
 
