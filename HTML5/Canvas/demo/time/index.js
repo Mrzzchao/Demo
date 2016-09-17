@@ -17,6 +17,14 @@ window.onload = function() {
     var canvas = document.getElementById('canvas');
     var cxt = canvas.getContext('2d');
 
+    CANVAS_WIDTH = document.body.clientWidth;
+    CANVAS_HEIGHT = document.body.clientHeight;
+    console.log(CANVAS_WIDTH);
+    console.log(CANVAS_HEIGHT);
+    MARGIN_LEFT = Math.round(CANVAS_WIDTH / 10);
+    RADIUS = Math.round(CANVAS_WIDTH * 4 / 5 / 108) - 1;
+    MARGIN_TOP = Math.round(CANVAS_HEIGHT / 5);
+
     canvas.width = CANVAS_WIDTH;
     canvas.height = CANVAS_HEIGHT;
 
@@ -60,7 +68,7 @@ function addBall(ballX, ballY) {
         y: ballY,
         r: RADIUS * 0.75,
         vx: Math.pow(-1, Math.ceil(Math.random() * 1000)) * 4,
-        vy: -(Math.random()*20),
+        vy: -(Math.random() * 20),
         g: 1,
         color: colors[Math.floor(Math.random() * colors.length)]
     });
@@ -102,7 +110,7 @@ function render(cxt) {
             disLeft += DIS_NUM;
             renderDigit(disLeft, MARGIN_TOP, parseInt(nextTime[i] % 10), cxt, flagR);
             disLeft += DIS_NUM;
-            if (i !== 2) {         // 判断是否绘制冒号
+            if (i !== 2) { // 判断是否绘制冒号
                 renderDigit(disLeft, MARGIN_TOP, 10, cxt, false);
                 disLeft += DIS_COLON;
             }
@@ -146,8 +154,8 @@ function render(cxt) {
     function renderText(cxt) {
         cxt.beginPath();
         cxt.fillStyle = FILL_COLOR;
-        cxt.font="70px YaHei";
-        cxt.fillText(TEXT,MARGIN_LEFT,MARGIN_TOP + (RADIUS + 1) * 30);
+        cxt.font = "70px YaHei";
+        cxt.fillText(TEXT, MARGIN_LEFT, MARGIN_TOP + (RADIUS + 1) * 30);
         cxt.closePath();
     }
 }
